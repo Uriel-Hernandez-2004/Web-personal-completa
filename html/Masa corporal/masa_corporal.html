@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Determinar IMC</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/nav-styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav_container">
+            <a href="/index.html" onclick="mostrarSeccion('inicio')"> Inicio</a>
+            <div class="animation start_home"></div>
+        </div>
+    </nav>
+    <div class="main_container">
+        <div class="container">
+            <h1>Determinar IMC</h1>
+            <div class="input">
+                <input id="peso" type="number" placeholder="Peso (kg)">
+                <input id="estaturaMetros" type="number" placeholder="Estatura (m)">
+            </div>
+            <button onclick="calculateIMC()">Calcular</button>
+            <div id="cards" class="card">
+                <img id="image" src="IMG/03 Sobrepeso.png">
+                <p id="imc"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

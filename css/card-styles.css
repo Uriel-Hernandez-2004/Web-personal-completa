@@ -1,0 +1,80 @@
+:root{
+  --negro:	#191919;
+  --pal1a: #ffe9d0;
+  --pal1b: #fffed3;
+  --pal1c: #bbe9ff;
+  --pal1d: #B1AFFF;
+  --pal2a: #161d6f;
+  --pal2b: #0b2f9f;
+  --pal2c: #98DED9;
+  --pal2d: #c7ffd8;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cards {
+  display: flex;
+  width: 130%;
+  padding: 50px;
+}
+
+.card {
+  background: pa;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 153, 255) 1%,
+    rgb(144, 94, 153) 100%
+  );
+  color: white;
+  width: 300px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3), -4px 0 10px rgba(0, 0, 0, 0.2),
+    -5px 0 10px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.3s ease;
+}
+
+.card a {
+  color: rgb(255, 183, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: lightyellow;
+}
+
+.card:hover {
+  margin-right: 80px;
+  transform: rotate(3deg) translateY(-15px);
+}
+.card .header {
+  flex: 1;
+}
+
+.card .header .date {
+  padding: 10px 0;
+}
+
+.card .header .title {
+  font-size: 28px;
+}
+
+card[class*="element"] {
+  margin-left: -100px;
+}
+
+.element-1:hover,
+.element-2:hover {
+  margin-left: -130px;
+}
